@@ -1,18 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "Angular Bridge Base",
+  "name": "ponte-angular-ce",
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
+  "description": "library for creating a bridge between chrome extensions and angular app",
   "action": {
     "default_popup": "popup.html"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "mensageiro.js"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["script_angular.js"],
+      "js": ["manipulador_angular.js"],
       "world": "MAIN"
     }
   ]
