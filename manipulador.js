@@ -29,9 +29,8 @@ const FUNC_LIB = {
     },
 	
 	LER_QTD_CARRINHO() {
-		return { qtdCarrinho: ManipuladorAngular.escopo?.qtdApostasCarrinho || 0 };
+		return { qtdCarrinho: ManipuladorAngular.escopo?.qtdItens || 0 };
 	},
-	
 };
 
 /**
