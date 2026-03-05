@@ -8,7 +8,6 @@ const ManipuladorAngular = {
 
     get escopo() {
         if (!this._escopo) {
-            // Seletor genérico, ajuste para o seletor do seu app
             const elementoDoAngular = document.querySelector(this.seletorElementoAngularHTML);
             this._escopo = window.angular?.element(elementoDoAngular).scope();
         }
